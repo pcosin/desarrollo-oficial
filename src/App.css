@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Button de navegacion */
+
+.navButtons {
+  display: flex;
+  flex-direction: column;
+}
