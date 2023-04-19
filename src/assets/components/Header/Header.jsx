@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonHeader from "./ButtonHeader";
-import logo from "../../../img/logo.png";
+import logo from "../../../img/logo-2.png";
 import "./header.css";
 
 function Header(props) {

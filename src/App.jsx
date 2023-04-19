@@ -10,10 +10,10 @@ import "./App.css";
 
 function App() {
   const [buttons, setButtons] = useState([
-    { text: "Soluciones", key: "home", backgroundColor: "#FFF" },
-    { text: "About", key: "about", backgroundColor: "#0151b2" },
+    { text: "Soluciones", key: "home", backgroundColor: "#1b1b1b" },
+    { text: "Nosotros", key: "about", backgroundColor: "#0151b2" },
     { text: "Proyectos", key: "proyectos", backgroundColor: "#ff3d00" },
-    { text: "Contact", key: "contact", backgroundColor: "#385239" },
+    { text: "Contacto", key: "contact", backgroundColor: "#385239" },
   ]);
 
   const [selectedButton, setSelectedButton] = useState("home");
@@ -28,7 +28,7 @@ function App() {
     setButtons(newButtons);
   };
 
-  let backgroundColor = buttons.find((b) => b.key === selectedButton)?.backgroundColor || "#FFF";
+  let backgroundColor = buttons.find((b) => b.key === selectedButton)?.backgroundColor || "#1b1b1b";
   let mainContent = null;
 
   if (selectedButton === "about") {

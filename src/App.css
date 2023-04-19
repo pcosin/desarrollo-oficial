@@ -18,7 +18,12 @@
 .mainContent {
   width: min(100% - 2rem, 1440px);
   margin: 0 auto;
-  min-height: 25rem;
+  min-height: 28rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  padding-block: 1rem;
 }
 
 /* Button de navegacion */

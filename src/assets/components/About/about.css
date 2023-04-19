@@ -4,7 +4,12 @@
 
 .card-about {
   display: flex;
+  align-items: center;
   padding-block: 2rem;
+}
+
+.card-info {
+  padding-inline: 1rem;
 }
 
 .card-img-about {

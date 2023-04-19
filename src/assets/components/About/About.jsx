@@ -9,7 +9,7 @@ function About() {
       <section className="main-about">
         <div className="card-about">
           <img className="card-img-about" src={imgPablo} alt="Imagen de Pablo Cosin" />
-          <div>
+          <div className="card-info">
             <h3 className="card-title">Pablo Cosin</h3>
             <h4 className="card-subtitle">Licenciado en ingenieria de software</h4>
             <p className="card-text">
@@ -22,7 +22,7 @@ function About() {
         </div>
         <div className="card-about">
           <img className="card-img-about" src={imgPablo} alt="Imagen de Pablo Cosin" />
-          <div>
+          <div className="card-info">
             <h3 className="card-title">Pablo Cosin</h3>
             <h4 className="card-subtitle">Licenciado en ingenieria de software</h4>
             <p className="card-text">
