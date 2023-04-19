@@ -1,11 +1,12 @@
 import React from "react";
+import "./footer.css";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <div className="social-icons"></div>
       <div>
-        <p>Copyrigth @ 2023 Desarrollos Monigote</p>
+        <p>Copyrigth@ 2023 Desarrollos Monigote</p>
       </div>
     </footer>
   );

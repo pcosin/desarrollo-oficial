@@ -1,7 +1,11 @@
 .main-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-block: 1.5rem;
+  border-bottom: 4px solid black;
+  width: min(100% - 2rem, 1440px);
+  margin: 0 auto;
 }
 
 .logo-header {

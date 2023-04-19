@@ -4,67 +4,62 @@ import Footer from "./assets/components/Footer/Footer";
 import Home from "./assets/components/Home/Home";
 import Contact from "./assets/components/Contact/Contact";
 import About from "./assets/components/About/About";
+import Proyectos from "./assets/components/Proyectos/Proyectos";
+import ButtonNav from "./assets/components/ButtonNav";
 import "./App.css";
+
 function App() {
+  const [buttons, setButtons] = useState([
+    { text: "Soluciones", key: "home", backgroundColor: "#FFF" },
+    { text: "About", key: "about", backgroundColor: "#0151b2" },
+    { text: "Proyectos", key: "proyectos", backgroundColor: "#ff3d00" },
+    { text: "Contact", key: "contact", backgroundColor: "#385239" },
+  ]);
+
   const [selectedButton, setSelectedButton] = useState("home");
-  const [buttonColors, setButtonColors] = useState({
-    home: "#E8E8E8",
-    about: "",
-    contact: "",
-  });
 
   const handleButtonClick = (button) => {
     setSelectedButton(button);
-    setButtonColors((prevColors) => {
-      return {
-        ...prevColors,
-        [button]: prevColors.home,
-      };
-    });
+    const index = buttons.findIndex((b) => b.key === button);
+    const buttonCopy = buttons[index];
+    const newButtons = [...buttons];
+    newButtons.splice(index, 1);
+    newButtons.splice(0, 0, buttonCopy);
+    setButtons(newButtons);
   };
 
-  let backgroundColor = "#E8E8E8";
+  let backgroundColor = buttons.find((b) => b.key === selectedButton)?.backgroundColor || "#FFF";
   let mainContent = null;
 
   if (selectedButton === "about") {
-    backgroundColor = "#A9A9A9";
     mainContent = <About />;
   } else if (selectedButton === "contact") {
-    backgroundColor = "#9ACD32";
     mainContent = <Contact />;
+  } else if (selectedButton === "proyectos") {
+    mainContent = <Proyectos />;
   } else {
     mainContent = <Home />;
   }
 
   return (
     <div className="container">
-      <Header />
-      <main style={{ backgroundColor }}>{mainContent}</main>
+      <Header style={{ backgroundColor }} />
+      <main style={{ backgroundColor }}>
+        <div className="mainContent">{mainContent}</div>
+      </main>
       <nav className="navButtons">
-        <button
-          style={{ backgroundColor: buttonColors.home }}
-          className={selectedButton === "home" ? "selected" : ""}
-          onClick={() => handleButtonClick("home")}
-        >
-          Soluciones
-        </button>
-        <button
-          style={{ backgroundColor: buttonColors.about }}
-          className={selectedButton === "about" ? "selected" : ""}
-          onClick={() => handleButtonClick("about")}
-        >
-          About
-        </button>
-        <button
-          style={{ backgroundColor: buttonColors.contact }}
-          className={selectedButton === "contact" ? "selected" : ""}
-          onClick={() => handleButtonClick("contact")}
-        >
-          Contact
-        </button>
+        {buttons.map((button) => (
+          <ButtonNav
+            key={button.key}
+            text={button.text}
+            color={button.backgroundColor}
+            onClick={() => handleButtonClick(button.key)}
+          />
+        ))}
       </nav>
       <Footer />
     </div>
   );
 }
-export default App();
+
+export default App;

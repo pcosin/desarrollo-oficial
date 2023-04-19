@@ -1,0 +1,14 @@
+.main-about {
+  display: flex;
+}
+
+.card-about {
+  display: flex;
+  padding-block: 2rem;
+}
+
+.card-img-about {
+  border-radius: 50%;
+  max-width: 250px;
+  max-height: 250px;
+}
