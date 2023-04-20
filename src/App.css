@@ -8,13 +8,6 @@
   padding: 0;
 }
 
-/* .container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
 .mainContent {
   width: min(100% - 2rem, 1440px);
   margin: 0 auto;

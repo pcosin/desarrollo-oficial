@@ -1,0 +1,7 @@
+.contacto-main {
+  display: flex;
+}
+
+.contacto-main div {
+  flex-basis: 100%;
+}

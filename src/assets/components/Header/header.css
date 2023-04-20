@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding-block: 1.5rem;
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
   width: min(100% - 2rem, 1440px);
   margin: 0 auto;
 }
@@ -11,5 +11,4 @@
 .logo-header {
   max-width: 180px;
   object-fit: contain;
-  filter: invert(100%) sepia(0%) saturate(7466%) hue-rotate(77deg) brightness(107%) contrast(109%);
 }

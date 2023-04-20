@@ -1,3 +1,25 @@
-.main-home {
-  padding-block: 5rem;
+.nav-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-block: 2rem;
+}
+
+.btn-nav-home {
+  background-color: inherit;
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+.title-home {
+  font-size: 3.5rem !important;
+}
+
+.main-parrafo {
+  padding-top: 2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  max-width: 75ch;
 }
