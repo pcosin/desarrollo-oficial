@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import "./home.css";
 import mainContentHome from "./mainContenHome";
+import { FiArrowRight } from "react-icons/fi";
+
+import "./home.css";
 
 function Home() {
   const [mainContent, setMainContent] = useState(
@@ -33,6 +35,7 @@ function Home() {
         ) : (
           mainContentHome[mainContent].map((parrafo, index) => (
             <p key={index} className="main-parrafo">
+              <FiArrowRight />
               {parrafo}
             </p>
           ))

@@ -3,3 +3,12 @@
   flex-direction: column;
   text-align: left;
 }
+
+.btn-nav-text-svg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-nav-text-svg svg {
+  vertical-align: middle;
+}

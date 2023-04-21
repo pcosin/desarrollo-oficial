@@ -8,8 +8,12 @@ function Header(props) {
     <nav style={props.style}>
       <div className="main-header">
         <img className="logo-header" src={logo} alt="Logo de la empresa" />
-        <h2>Impulsamos tu negocio</h2>
-        <h2>Diseñamos y desarrollamos </h2>
+        <h2 className="nav-text">
+          Impulsamos tu negocio <br /> al pŕoximo nivel
+        </h2>
+        <h2 className="nav-text">
+          Diseñamos y desarrollamos <br /> tu página a medida
+        </h2>
         <ButtonHeader />
       </div>
     </nav>

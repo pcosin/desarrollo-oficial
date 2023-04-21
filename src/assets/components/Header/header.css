@@ -9,6 +9,11 @@
 }
 
 .logo-header {
-  max-width: 180px;
+  max-width: 210px;
   object-fit: contain;
+}
+
+.nav-text {
+  text-align: center;
+  font-size: 1.2rem;
 }

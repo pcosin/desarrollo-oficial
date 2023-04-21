@@ -23,3 +23,8 @@
   font-size: 1.1rem;
   max-width: 75ch;
 }
+
+.main-parrafo > svg {
+  margin-right: 0.3rem;
+  vertical-align: middle;
+}

@@ -12,8 +12,18 @@
   padding-inline: 1rem;
 }
 
+.card-info > * {
+  margin-block: 0.3rem;
+}
+
 .card-img-about {
   border-radius: 50%;
-  max-width: 250px;
-  max-height: 250px;
+  width: 230px;
+  height: 230px;
+}
+
+.btn-card-about {
+  background-color: inherit;
+  border: 1px solid #fff;
+  color: #fff;
 }

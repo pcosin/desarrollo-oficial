@@ -1,5 +1,6 @@
 import React from "react";
 import "./buttonNav.css";
+import { BiDownArrowCircle } from "react-icons/bi";
 
 function ButtonNav({ text, color, onClick }) {
   return (
@@ -8,8 +9,11 @@ function ButtonNav({ text, color, onClick }) {
       className={color === "" ? "navButton" : "navButton selected"}
       onClick={onClick}
     >
-      <div style={{ maxWidth: "min(100% - 2rem, 1440px)", margin: "0 auto", color: "#FFF" }}>
-        {text}
+      <div
+        className="btn-nav-text-svg"
+        style={{ maxWidth: "min(100% - 2rem, 1440px)", margin: "0 auto", color: "#FFF" }}
+      >
+        {text} <BiDownArrowCircle />
       </div>
     </button>
   );
