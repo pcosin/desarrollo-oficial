@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Header from "./assets/components/Header/Header";
 import Footer from "./assets/components/Footer/Footer";
 import Home from "./assets/components/Home/Home";
@@ -10,10 +11,10 @@ import "./App.css";
 
 function App() {
   const [buttons, setButtons] = useState([
-    { text: "Soluciones", key: "home", backgroundColor: "#1b1b1b" },
+    { text: "Soluciones", key: "home", path: "/", backgroundColor: "#1b1b1b" },
     { text: "Nosotros", key: "about", backgroundColor: "#0151b2" },
     { text: "Proyectos", key: "proyectos", backgroundColor: "#ff3d00" },
-    { text: "Contacto", key: "contact", backgroundColor: "#385239" },
+    { text: "Contacto", key: "contact", path: "/contact", backgroundColor: "#385239" },
   ]);
 
   const [selectedButton, setSelectedButton] = useState("home");
@@ -41,24 +42,30 @@ function App() {
     mainContent = <Home />;
   }
 
+  const handleLogoClick = () => {
+    setSelectedButton("home");
+  };
+
   return (
-    <div className="container">
-      <Header style={{ backgroundColor }} />
-      <main style={{ backgroundColor }}>
-        <div className="mainContent">{mainContent}</div>
-      </main>
-      <nav className="navButtons">
-        {buttons.map((button) => (
-          <ButtonNav
-            key={button.key}
-            text={button.text}
-            color={button.backgroundColor}
-            onClick={() => handleButtonClick(button.key)}
-          />
-        ))}
-      </nav>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Header style={{ backgroundColor }} handleLogoClick={handleLogoClick} />
+        <main style={{ backgroundColor }}>
+          <div className="mainContent">{mainContent}</div>
+        </main>
+        <nav className="navButtons">
+          {buttons.map((button) => (
+            <ButtonNav
+              key={button.key}
+              text={button.text}
+              color={button.backgroundColor}
+              onClick={() => handleButtonClick(button.key)}
+            />
+          ))}
+        </nav>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

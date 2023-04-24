@@ -5,3 +5,13 @@
 .contacto-main div {
   flex-basis: 100%;
 }
+
+input {
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .contacto-main {
+    flex-direction: column;
+  }
+}

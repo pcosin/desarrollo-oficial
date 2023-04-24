@@ -27,3 +27,15 @@
   border: 1px solid #fff;
   color: #fff;
 }
+
+@media (max-width: 1024px) {
+  .main-about {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-about {
+    flex-direction: column;
+  }
+}

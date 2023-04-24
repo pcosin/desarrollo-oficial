@@ -2,12 +2,23 @@ import React from "react";
 import ButtonHeader from "./ButtonHeader";
 import logo from "../../../img/logo-2.png";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
     <nav style={props.style}>
       <div className="main-header">
-        <img className="logo-header" src={logo} alt="Logo de la empresa" />
+        <Link to="/">
+          <img
+            src={logo}
+            alt="Logo"
+            onClick={() => {
+              props.handleLogoClick();
+              props.handleButtonClick("home");
+            }}
+          />
+        </Link>
+
         <h2 className="nav-text">
           Impulsamos tu negocio <br /> al pŕoximo nivel
         </h2>
