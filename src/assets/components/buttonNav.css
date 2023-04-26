@@ -12,3 +12,7 @@
 .btn-nav-text-svg svg {
   vertical-align: middle;
 }
+
+.fade > * {
+  width: 100%;
+}

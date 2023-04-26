@@ -54,7 +54,7 @@ function App() {
         <main style={{ backgroundColor }}>
           <div className="mainContent">{mainContent}</div>
         </main>
-        <nav className="navButtons slide-in-left">
+        <nav className="navButtons">
           {buttons.map((button) => (
             <ButtonNav
               key={button.key}

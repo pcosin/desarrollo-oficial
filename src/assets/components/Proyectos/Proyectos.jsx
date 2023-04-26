@@ -7,10 +7,18 @@ function Proyectos() {
   return (
     <div>
       <h1 className="title">Proyectos</h1>
-      <section className="section-proyects">
+      <section className="section-proyects slide-in-fwd-center">
         <div className="card-proyects">
           <img className="img-proyects" src={mockupPalacio} alt="" />
           <a href="http://">Archivo Histórico Palacio San José</a>
+        </div>
+        <div className="card-proyects">
+          <img className="img-proyects" src={mockupVuelta} alt="" />
+          <a href="http://">Vuelta Canela</a>
+        </div>
+        <div className="card-proyects">
+          <img className="img-proyects" src={mockupVuelta} alt="" />
+          <a href="http://">Vuelta Canela</a>
         </div>
         <div className="card-proyects">
           <img className="img-proyects" src={mockupVuelta} alt="" />

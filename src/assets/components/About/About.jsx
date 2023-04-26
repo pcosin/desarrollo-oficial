@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <h1 className="title title-about">nuestro equipo</h1>
-      <section className="main-about">
+      <section className="main-about slide-in-fwd-center">
         <div className="card-about">
           <img className="card-img-about" src={imgPablo} alt="Imagen de Pablo Cosin" />
           <div className="card-info">
