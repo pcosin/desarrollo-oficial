@@ -8,9 +8,11 @@ function Home() {
   const [mainContent, setMainContent] = useState(
     "Transformá tu página web en una página de ventas"
   );
+  const [key, setKey] = useState(Date.now());
 
   const handleButtonClick = (section) => {
     setMainContent(section);
+    setKey(Date.now());
   };
 
   return (
@@ -31,10 +33,13 @@ function Home() {
       </nav>
       <div className="main-home">
         {mainContent === "Transformá tu página web en una página de ventas" ? (
-          <h1 className="title title-home">{mainContent}</h1>
+          <h1 className="title title-home slide-in-left">{mainContent}</h1>
         ) : (
           mainContentHome[mainContent].map((parrafo, index) => (
-            <p key={index} className="main-parrafo">
+            <p
+              key={`${parrafo}-${index}-${key}`}
+              className={`main-parrafo tracking-in-expand delay-${index}`}
+            >
               <FiArrowRight />
               {parrafo}
             </p>

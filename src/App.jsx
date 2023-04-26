@@ -7,6 +7,7 @@ import Contact from "./assets/components/Contact/Contact";
 import About from "./assets/components/About/About";
 import Proyectos from "./assets/components/Proyectos/Proyectos";
 import ButtonNav from "./assets/components/ButtonNav";
+
 import "./App.css";
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
         <main style={{ backgroundColor }}>
           <div className="mainContent">{mainContent}</div>
         </main>
-        <nav className="navButtons">
+        <nav className="navButtons slide-in-left">
           {buttons.map((button) => (
             <ButtonNav
               key={button.key}

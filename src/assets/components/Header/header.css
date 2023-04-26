@@ -17,3 +17,15 @@
   text-align: center;
   font-size: 1.2rem;
 }
+
+@media (max-width: 960px) {
+  .nav-text {
+    display: none;
+  }
+}
+
+@media (max-width: 475px) {
+  .logo-header {
+    width: 100px;
+  }
+}
