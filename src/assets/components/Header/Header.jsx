@@ -10,6 +10,7 @@ function Header(props) {
       <div className="main-header">
         <Link to="/">
           <img
+            className="logo"
             src={logo}
             alt="Logo"
             onClick={() => {

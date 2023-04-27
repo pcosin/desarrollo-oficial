@@ -1,0 +1,13 @@
+@media (max-width: 420px) {
+  .btn-header {
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 335px) {
+  .btn-header {
+    padding: 0.1rem 0.9rem;
+    font-size: 0.7rem;
+  }
+}

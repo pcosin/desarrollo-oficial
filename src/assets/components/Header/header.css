@@ -29,3 +29,15 @@
     width: 100px;
   }
 }
+
+@media (max-width: 470px) {
+  .logo {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 370px) {
+  .logo {
+    max-width: 120px;
+  }
+}
