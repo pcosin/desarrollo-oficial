@@ -50,7 +50,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="container">
-        <Header style={{ backgroundColor }} handleLogoClick={handleLogoClick} />
+        <Header
+          style={{ backgroundColor }}
+          handleLogoClick={handleLogoClick}
+          handleButtonClick={handleButtonClick}
+        />
         <main style={{ backgroundColor }}>
           <div className="mainContent">{mainContent}</div>
         </main>

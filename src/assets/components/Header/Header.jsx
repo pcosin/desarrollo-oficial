@@ -26,7 +26,7 @@ function Header(props) {
         <h2 className="nav-text">
           Diseñamos y desarrollamos <br /> tu página a medida
         </h2>
-        <ButtonHeader />
+        <ButtonHeader handleButtonClick={props.handleButtonClick} />
       </div>
     </nav>
   );
