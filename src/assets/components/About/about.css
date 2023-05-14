@@ -16,11 +16,62 @@
   margin-block: 0.3rem;
 }
 
+.about-container-card-img{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.about-container-card-img > div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.about-container-card-img > div:hover{
+  filter: drop-shadow(0px 0px 4px #091f3b);
+
+}
+
 .card-img-about {
   border-radius: 50%;
   object-fit: cover;
-  width: 230px;
-  height: 230px;
+  width: 170px;
+  height: 170px;
+}
+
+.about-container-socialMedia{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+.about-container-text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-container-text > h3{
+  font-size: 1.8rem;
+}
+
+.about-container-text > button {
+  width: 25%;
+  border-radius: 5px;
+  color: #0151b2;
+}
+
+.about-container-text > button:hover{
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0px 0px 4px #051324;
 }
 
 .btn-card-about {

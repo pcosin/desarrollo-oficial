@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .form-group {
@@ -17,6 +18,12 @@
   border-bottom: 1px solid #ddd;
   background-color: inherit;
   padding: 0.5rem 1rem;
+  outline: none;
+}
+
+.errorMessage{
+  color: rgb(255, 0, 0);
+  font-size: 14px;
 }
 
 .btn-wrapper {
@@ -27,4 +34,10 @@
 
 .btn-contact {
   padding: 1rem 4rem;
+}
+
+.containerToast{
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
 }

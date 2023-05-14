@@ -7,10 +7,24 @@ import Contact from "./assets/components/Contact/Contact";
 import About from "./assets/components/About/About";
 import Proyectos from "./assets/components/Proyectos/Proyectos";
 import ButtonNav from "./assets/components/ButtonNav";
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 import "./App.css";
 
 function App() {
+
+  const notify = () =>  toast.success('Mail enviado correctamente', {
+    position: "top-center",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    });;
+
   const [buttons, setButtons] = useState([
     { text: "Soluciones", key: "home", path: "/", backgroundColor: "#1b1b1b" },
     { text: "Nosotros", key: "about", backgroundColor: "#0151b2" },
@@ -19,6 +33,8 @@ function App() {
   ]);
 
   const [selectedButton, setSelectedButton] = useState("home");
+
+  const [toast, setToast] = useState(null);
 
   const handleButtonClick = (button) => {
     setSelectedButton(button);
@@ -36,7 +52,7 @@ function App() {
   if (selectedButton === "about") {
     mainContent = <About />;
   } else if (selectedButton === "contact") {
-    mainContent = <Contact />;
+    mainContent = <Contact setToast={setToast} />;
   } else if (selectedButton === "proyectos") {
     mainContent = <Proyectos />;
   } else {
@@ -57,6 +73,8 @@ function App() {
         />
         <main style={{ backgroundColor }}>
           <div className="mainContent">{mainContent}</div>
+          {/* <button onClick={notify}>Notify!</button> */}
+          <ToastContainer />
         </main>
         <nav className="navButtons">
           {buttons.map((button) => (
