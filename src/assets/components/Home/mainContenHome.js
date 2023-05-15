@@ -11,7 +11,7 @@ const mainContentHome = {
   ],
   disenoGrafico: [
     "Diseñamos páginas dinámicas que se adaptan a cualquier tipo de dispositivo: celulares, tables, computadoras de escritorio o notebooks.",
-    "Desarrollamos logos y paletas de colores para potenciar tu marca.",
+    "Desarrollamos logos y paletas de colores para potenciar tu marca. Creamos identidades únicas.",
     "A partir de un desarrollo de marca individualizado, creamos una identidad única y completamente reconocible.",
   ],
   emailMarketing: [
