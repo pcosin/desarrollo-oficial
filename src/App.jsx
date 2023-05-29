@@ -68,8 +68,7 @@ function App() {
       <div className="container">
         <Header
           style={{ backgroundColor }}
-          handleLogoClick={handleLogoClick}
-          handleButtonClick={handleButtonClick}
+          handleButtonClick={handleButtonClick} handleLogoClick={handleLogoClick} 
         />
         <main style={{ backgroundColor }}>
           <div className="mainContent">{mainContent}</div>

@@ -1,7 +1,7 @@
 const mainContentHome = {
   desarrolloWeb: [
     "Generamos páginas webs adaptables a todo tipo de tamaños y dispositivos. Creamos E-commerce rápidos y seguros, con todas las utilidades que tu marca necesita.",
-    "No solo diseñamos páginas 'bonitas',nos enfocamos en la experiencia que tendrán los visitantes al interactuar con ella, fomentando un incremento de ventas",
+    "No solo diseñamos páginas 'bonitas', nos enfocamos en la experiencia que tendrán los visitantes al interactuar con ella, fomentando un incremento de ventas.",
     "A través de un desarrollo sustentable hacemos páginas fáciles de navegar, accesibles, concentrándonos en que el usuario se sienta satisfecho con la experiencia y quiera volver.",
   ],
   copywriting: [
