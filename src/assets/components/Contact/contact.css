@@ -15,3 +15,18 @@ input {
     flex-direction: column;
   }
 }
+
+.containerInfoContact{
+  display: flex;
+  flex-direction: column;
+}
+
+.containerSocialMedia{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.containerSocialMedia > a > svg{
+  font-size: 50px;
+}

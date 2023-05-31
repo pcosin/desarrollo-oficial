@@ -14,3 +14,60 @@
   max-width: 300px;
   object-fit: cover;
 }
+
+.containerCarousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  overflow: hidden;
+  padding: 2%;
+}
+
+/* .containerSplide{
+  width: 100%;
+} */
+
+.containerImg{
+  display: flex;
+  justify-content: center;
+}
+
+/* .containerImg:hover > a{
+  background-color: #22222259;
+  z-index: 3;
+} */
+
+.containerUrlSite{
+  position: relative;
+}
+
+
+
+.containerNameSite{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden{
+  display: none;
+}
+.containerNameSite > strong {
+  font-size: 2rem;
+}
+
+/* .imgCarousel:hover + .containerNameSite{
+
+} */
+
+.imgCarousel{
+  width: 100%;
+  height: 100%;
+}
