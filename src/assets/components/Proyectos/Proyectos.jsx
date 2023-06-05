@@ -44,8 +44,8 @@ function Proyectos() {
       <div className="containerCarousel">
         <Splide hasTrack={ false }  aria-label="My Favorite Images" className="containerSplide" options={{
           type: 'loop',
-          padding: "22%",
-          width:"100%",
+          padding: "25%",
+          width:"95%",
           gap: "1rem",
           autoplay: true,
         }} >
@@ -53,10 +53,10 @@ function Proyectos() {
               {
               dataTrabajos.map((item, i) => (
                 
-                  <SplideSlide className="containerImg" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}    key={i} >
+                  <SplideSlide className="containerImg"     key={i} >
                     <a href={item.urlSite} className="containerUrlSite" target="_blank">
                       <img className="imgCarousel"  data-key={i} src={item.imgSite} alt="Image 1"/>
-                      <div ref={(ref) => (divsContainerNameSite.current[i] = ref)}>
+                      <div className="containerNameSite" ref={(ref) => (divsContainerNameSite.current[i] = ref)}>
                         <strong>{item.nameSite}</strong>
                       </div>
                     </a>

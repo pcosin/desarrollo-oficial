@@ -16,3 +16,7 @@
 .fade > * {
   width: 100%;
 }
+
+button:hover{
+  border-color: #fff !important;
+}

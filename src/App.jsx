@@ -36,6 +36,8 @@ function App() {
 
   const [toast, setToast] = useState(null);
 
+  const [isHome, setIsHome] = useState(true)
+
   const handleButtonClick = (button) => {
     setSelectedButton(button);
     const index = buttons.findIndex((b) => b.key === button);
@@ -56,11 +58,12 @@ function App() {
   } else if (selectedButton === "proyectos") {
     mainContent = <Proyectos />;
   } else {
-    mainContent = <Home />;
+    mainContent = <Home isHome={isHome} setIsHome={setIsHome} />;
   }
 
   const handleLogoClick = () => {
     setSelectedButton("home");
+    setIsHome(true)
   };
 
   return (

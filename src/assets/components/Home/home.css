@@ -22,10 +22,14 @@
   text-align: center;
 }
 
+.container-parrafo{
+  border-bottom: 1px solid #ddd;
+
+}
+
 .main-parrafo {
   padding-top: 2rem;
   padding-bottom: 0.8rem;
-  border-bottom: 1px solid #ddd;
   font-size: 1.1rem;
   max-width: 75ch;
 }
@@ -45,8 +49,8 @@
   animation-delay: 1s !important; /* o cualquier valor que desees */
 }
 .tracking-in-expand {
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 /* ----------------------------------------------

@@ -4,11 +4,13 @@ import { FiArrowRight } from "react-icons/fi";
 
 import "./home.css";
 
-function Home() {
+function Home({isHome, setIsHome}) {
   const defaultMainContent = "Transformá tu página web en una página de ventas";
   const [mainContent, setMainContent] = useState(defaultMainContent);
   const [key, setKey] = useState(Date.now());
-  const [isHome, setIsHome] = useState(true);
+  // const [isHome, setIsHome] = useState(true);
+
+console.log(isHome);
 
   useEffect(() => {
     if (isHome) {
@@ -24,7 +26,8 @@ function Home() {
   };
 
   const handleLogoClick = () => {
-    setIsHome(true);
+    setMainContent(defaultMainContent)
+    // setIsHome(true);
   };
 
   return (
@@ -65,13 +68,15 @@ function Home() {
           </>
         ) : (
           mainContentHome[mainContent].map((parrafo, index) => (
-            <p
+            <div className="container-parrafo" key={index}>
+                  <p
               key={`${parrafo}-${index}-${key}`}
               className={`main-parrafo tracking-in-expand delay-${index}`}
             >
               <FiArrowRight />
               {parrafo}
             </p>
+            </div>
           ))
         )}
       </div>

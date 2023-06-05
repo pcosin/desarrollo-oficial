@@ -2,21 +2,36 @@
     {
         "nameSite": "Archivo Historico Palacio San José",
         "urlSite": "https://archivohistorico-palaciosanjose.com/",
-        "imgSite": "/src/img/trabajos/palacio.PNG" 
+        "imgSite": "/src/img/trabajos/palacio.jpeg" 
     },
     {
         "nameSite": "Ana María Shua",
         "urlSite": "https://anamariashua.com/",
-        "imgSite": "/src/img/trabajos/anaMariaShua.PNG" 
+        "imgSite": "/src/img/trabajos/anaMariaShua.jpeg" 
     },
     {
-        "nameSite": "Archivo Historico Palacio San José",
-        "urlSite": "https://archivohistorico-palaciosanjose.com/",
-        "imgSite": "/src/img/trabajos/palacio.PNG" 
+        "nameSite": "Jorge Cosin - Licenciado en Psicología - Psicoanalista",
+        "urlSite": "https://psicoanalistadelnolugar.com/",
+        "imgSite": "/src/img/trabajos/jorgeCosin.jpeg" 
     },
     {
-        "nameSite": "Archivo Historico Palacio San José",
-        "urlSite": "https://archivohistorico-palaciosanjose.com/",
-        "imgSite": "/src/img/trabajos/palacio.PNG" 
+        "nameSite": "Vuelta Canela",
+        "urlSite": "http://vueltacanela.com.ar/index.html",
+        "imgSite": "/src/img/trabajos/vueltaCanela.jpeg" 
+    },
+    {
+        "nameSite": "ML4DATA",
+        "urlSite": "https://ml4data.com/",
+        "imgSite": "/src/img/trabajos/ml4data.jpeg" 
+    },
+    {
+        "nameSite": "Cine World Media",
+        "urlSite": "https://www.cineworldmedia.com/",
+        "imgSite": "/src/img/trabajos/cineworldmedia.jpeg" 
+    },
+    {
+        "nameSite": "Ayelén María Gaitán",
+        "urlSite": "https://ayelenmariagaitan.ar/",
+        "imgSite": "/src/img/trabajos/ayelenmariagaitan.png" 
     }
 ]

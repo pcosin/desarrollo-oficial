@@ -7,7 +7,7 @@ function ButtonNav({ text, color, onClick, index }) {
   return (
     <Fade className="fade" key={index} direction="left" delay={index * 200}>
       <button
-        style={{ backgroundColor: color, textAlign: "left" }}
+        style={{ backgroundColor: color, textAlign: "left",}}
         className={color === "" ? "navButton" : "navButton selected"}
         onClick={onClick}
       >
