@@ -8,10 +8,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 function About() {
   return (
     <>
-      <h1 className="title title-about">Nosotros</h1>
+      <h1 className="title title-about">¿Que es Desarrollos Monigote?</h1>
       <section className="main-about slide-in-fwd-center">
         <div className="about-container-text">
-          <h3>Desarrollos Monigote</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tenetur dolor nesciunt tempore. Consequuntur porro molestiae quaerat iste sapiente inventore ipsam veritatis excepturi obcaecati dicta! Dolorum harum sint ipsum unde!</p>
           <button>Aprende con nosotros</button>
         </div>

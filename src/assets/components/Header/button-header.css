@@ -1,3 +1,14 @@
+.btn-header{
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.btn-header:hover{
+  background-color: transparent;
+  color: #fff;
+}
+
 @media (max-width: 420px) {
   .btn-header {
     padding: 0.2rem 1rem;

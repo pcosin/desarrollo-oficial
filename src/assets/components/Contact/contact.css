@@ -1,5 +1,6 @@
-.contacto-main {
-  display: flex;
+
+h1{
+  text-align: center;
 }
 
 .contacto-main div {
@@ -25,6 +26,10 @@ input {
   display: flex;
   justify-content: center;
   gap: 100px;
+}
+
+.containerSocialMedia{
+  margin-top: 30px;
 }
 
 .containerSocialMedia > a > svg{

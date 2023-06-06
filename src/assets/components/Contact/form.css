@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 2rem;
-  width: 100%;
+  width: 50%;
+  margin: auto;
 }
 
 .form-group {
@@ -34,6 +35,15 @@
 
 .btn-contact {
   padding: 1rem 4rem;
+  width: 70%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.btn-contact:hover{
+  background-color: transparent;
+  color: #fff;
 }
 
 .containerToast{
