@@ -53,7 +53,8 @@
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
 }
 
 .hidden{
@@ -61,6 +62,7 @@
 }
 .containerNameSite > strong {
   font-size: 2rem;
+  color: #fff;
 }
 
 .containerImg:hover  > .containerUrlSite .containerNameSite{
@@ -71,3 +73,11 @@
   width: 100%;
   height: 100%;
 }
+
+.containerImg:hover .imgCarousel {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+  transition: all 0.4s ease-in-out
+  ;}
+.containerImg {overflow:hidden;}
+
