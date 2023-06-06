@@ -13,7 +13,7 @@
 
 .contact-input {
   height: 34px;
-  width: 100%;
+  width: 99%;
   border: 1px solid transparent;
   border-top: none;
   border-bottom: 1px solid #ddd;
@@ -50,4 +50,10 @@
   width: 100px;
   height: 50px;
   font-size: 20px;
+}
+
+@media (max-width:760px) {
+.contact-form {
+  width: 95%;
+}
 }
