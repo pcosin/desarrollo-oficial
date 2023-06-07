@@ -12,7 +12,6 @@ function About() {
       <section className="main-about slide-in-fwd-center">
         <div className="about-container-text">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tenetur dolor nesciunt tempore. Consequuntur porro molestiae quaerat iste sapiente inventore ipsam veritatis excepturi obcaecati dicta! Dolorum harum sint ipsum unde!</p>
-          <button>Aprende con nosotros</button>
         </div>
         <div className="about-container-card-img">
           <div>

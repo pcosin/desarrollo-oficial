@@ -1,6 +1,7 @@
 .main-about {
   display: flex;
   padding: 40px;
+  align-items: center;
 }
 
 .card-about {
@@ -158,5 +159,12 @@
   .about-container-card-img {
     flex-direction: column;
     gap: .7rem;
+  }
+  .about-container-text > p {
+    text-align: center;
+  }
+  .card-img-about {
+    width: 130px;
+    height: 130px;
   }
 }

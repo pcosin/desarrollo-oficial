@@ -17,6 +17,10 @@ main {
 .mainContent {
   width: min(100% - 2rem, 1440px);
   margin: 0 auto;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .title {
