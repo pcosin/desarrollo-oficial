@@ -4,7 +4,7 @@ import "./contact.css";
 import FormContact from "./FormContact";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconSocialMedia from "./IconSocialMedia";
 
 function Contact({setToast}) {
@@ -19,9 +19,9 @@ function Contact({setToast}) {
       url: 'https://www.instagram.com/desarrollos.monigote/'
     },
     {
-      icon: <YouTubeIcon/>,
-      url: 'https://www.instagram.com/desarrollos.monigote/'
-    }
+      icon: <LinkedInIcon/>,
+      url: 'https://www.linkedin.com/company/desarrollos-monigote/'
+    },
   ]
   
   return (

@@ -55,7 +55,7 @@ function Proyectos() {
                 
                   <SplideSlide className="containerImg"     key={i} >
                     <a href={item.urlSite} className="containerUrlSite" target="_blank">
-                      <img className="imgCarousel"  data-key={i} src={item.imgSite} alt="Image 1"/>
+                      <img className="imgCarousel"  data-key={i} src={item.imgSite} alt={item.nameSite}/>
                       <div className="containerNameSite" ref={(ref) => (divsContainerNameSite.current[i] = ref)}>
                         <strong>{item.nameSite}</strong>
                       </div>
@@ -76,6 +76,20 @@ function Proyectos() {
                   </button>
               </div>
         </Splide>
+        <div className="galeryMobile">
+              {
+                dataTrabajos.map((item, i) => (
+                  <div key={i} className="containerImgMobile">
+                    <a href={item.urlSite}>
+                      <img src={item.imgSite} className="imgCarousel" />
+                      <div className="containerNameSite">
+                        <strong>{item.nameSite}</strong>
+                      </div>
+                    </a>
+                  </div>
+                ))
+              }
+        </div>
       </div>
       :
       <div>
