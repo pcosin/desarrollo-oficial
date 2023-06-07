@@ -15,7 +15,7 @@ function About() {
         </div>
         <div className="about-container-card-img">
           <div>
-            <img src={imgPablo} className="card-img-about" />
+            <img src={imgPablo} alt="Imagen de Pablo Cosin" className="card-img-about" />
             <h4>Pablo Cosin</h4>
             <div className="about-container-socialMedia">
               <a href=""><LinkedInIcon /></a>
@@ -23,7 +23,7 @@ function About() {
             </div>
           </div>
           <div>
-            <img src={imgMathias} className="card-img-about" />
+            <img src={imgMathias} alt="Imagen de Mathias Barbosa" className="card-img-about" />
             <h4>Mathias Barbosa</h4>
             <div className="about-container-socialMedia">
               <a href=""><LinkedInIcon /></a>
