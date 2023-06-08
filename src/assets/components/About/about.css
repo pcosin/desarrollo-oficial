@@ -43,6 +43,11 @@
   object-fit: cover;
   width: 150px;
   height: 150px;
+  cursor: auto;
+}
+
+.about-name {
+  cursor: auto;
 }
 
 .about-container-socialMedia{
@@ -128,6 +133,7 @@
 @media (max-width: 715px) {
   .main-about {
     flex-direction: column;
+    padding: .5rem;
   }
   .about-container-text {
     width: 100%;
