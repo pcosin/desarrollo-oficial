@@ -57,3 +57,9 @@
   width: 95%;
 }
 }
+
+@media (max-width:380px) {
+  .btn-contact {
+    padding: 0.5rem 4rem;
+  }
+}
