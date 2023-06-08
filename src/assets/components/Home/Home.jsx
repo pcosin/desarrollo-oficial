@@ -55,7 +55,7 @@ console.log(isHome);
           className={`btn-nav-home${mainContent === "emailMarketing" ? " active" : ""}`}
           onClick={() => handleButtonClick("emailMarketing")}
         >
-          email marketing
+          Email marketing
         </button>
       </nav>
       <div className="main-home">

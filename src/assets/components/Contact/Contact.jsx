@@ -16,7 +16,7 @@ function Contact({setToast}) {
     },
     {
       icon: <WhatsAppIcon/>,
-      url: 'https://www.instagram.com/desarrollos.monigote/'
+      url: 'https://wa.me/1131709228'
     },
     {
       icon: <LinkedInIcon/>,

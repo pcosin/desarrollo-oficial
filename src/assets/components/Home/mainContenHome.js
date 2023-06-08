@@ -10,7 +10,7 @@ const mainContentHome = {
     "Un negocio con una comunicación clara y orientada a la acción atrae clientes y potencia tus ventas.",
   ],
   disenoGrafico: [
-    "Diseñamos páginas dinámicas que se adaptan a cualquier tipo de dispositivo: celulares, tables, computadoras de escritorio o notebooks.",
+    "Diseñamos páginas dinámicas que se adaptan a cualquier tipo de dispositivo: celulares, tablets, computadoras de escritorio o notebooks.",
     "Desarrollamos logos y paletas de colores para potenciar tu marca.",
     "A partir de un desarrollo de marca individualizado, creamos una identidad única y completamente reconocible.",
   ],

@@ -80,7 +80,7 @@ function Proyectos() {
               {
                 dataTrabajos.map((item, i) => (
                   <div key={i} className="containerImgMobile">
-                    <a href={item.urlSite}>
+                    <a href={item.urlSite} target="_blank">
                       <img src={item.imgSite} className="imgCarousel" />
                       <div className="containerNameSite">
                         <strong>{item.nameSite}</strong>
