@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonHeader from "./ButtonHeader";
-import logo from "../../../img/logo-2.png";
+import logo from "../../../../public/img/logo-2.png";
 import "./header.css";
 import { Link } from "react-router-dom";
 

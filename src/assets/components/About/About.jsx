@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
-import imgPablo from "../../../img/imgPabloAvatarPeq.jpeg";
-import imgMathias from "../../../img/imgMathiasAvatar.jpg";
+import imgPablo from "../../../../public/img/imgPabloAvatarPeq.jpeg";
+import imgMathias from "../../../../public/img/imgMathiasAvatar.jpg";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 

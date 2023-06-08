@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./proyectos.css";
-import mockupPalacio from "../../../img/mockup-palacio.png";
-import mockupVuelta from "../../../img/mockup-vuelta.png";
-import { axiosClient } from "../../../services/axios";
+// import mockupPalacio from "../../../img/mockup-palacio.png";
+// import mockupVuelta from "../../../img/mockup-vuelta.png";
+import { axiosClient } from "../../../../public/services/axios";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
