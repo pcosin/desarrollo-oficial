@@ -48,6 +48,7 @@ function Proyectos() {
           width:"95%",
           gap: "1rem",
           autoplay: true,
+          start:3
         }} >
           <SplideTrack  >
               {
@@ -67,10 +68,10 @@ function Proyectos() {
             </SplideTrack>
 
               <div className="splide__arrows splide__arrows--ltr">
-                  <button className="splide__arrow splide__arrow--prev">
+                  <button className="splide__arrow splide__arrow--prev" style={{backgroundColor:'transparent'}}>
                   <ArrowForwardIosIcon/>
                   </button>
-                  <button className="splide__arrow splide__arrow--next">
+                  <button className="splide__arrow splide__arrow--next" style={{backgroundColor:'transparent'}}>
                   <ArrowForwardIosIcon/>
 
                   </button>
