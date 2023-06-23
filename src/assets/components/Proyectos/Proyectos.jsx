@@ -47,8 +47,6 @@ function Proyectos() {
           padding: "25%",
           width:"95%",
           gap: "1rem",
-          autoplay: true,
-          start:3
         }} >
           <SplideTrack  >
               {
