@@ -7,26 +7,17 @@ import "./home.css";
 function Home({isHome, setIsHome}) {
   const defaultMainContent = "Transformá tu página web en una página de ventas";
   const [mainContent, setMainContent] = useState(defaultMainContent);
-  const [key, setKey] = useState(Date.now());
-  // const [isHome, setIsHome] = useState(true);
 
 
   useEffect(() => {
     if (isHome) {
       setMainContent(defaultMainContent);
-      setKey(Date.now());
     }
   }, [isHome]);
 
   const handleButtonClick = (section) => {
     setMainContent(section);
-    setKey(Date.now());
     setIsHome(false);
-  };
-
-  const handleLogoClick = () => {
-    setMainContent(defaultMainContent)
-    // setIsHome(true);
   };
 
   return (
@@ -76,12 +67,9 @@ function Home({isHome, setIsHome}) {
           </section>
           </>
         ) : (
-          mainContentHome[mainContent].map((parrafo, index) => (
-            <div className="container-parrafo" key={index}>
-                  <p
-              key={`${parrafo}-${index}-${key}`}
-              className={`main-parrafo tracking-in-expand delay-${index}`}
-            >
+          mainContentHome[mainContent].map((parrafo) => (
+            <div className="container-parrafo" >
+            <p className="main-parrafo">
               <FiArrowRight />
               {parrafo}
             </p>

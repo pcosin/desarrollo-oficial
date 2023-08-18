@@ -28,18 +28,16 @@ function App() {
     { text: "Soluciones", key: "home", path: "/", backgroundColor: "#1b1b1b" },
     { text: "Nosotros", key: "about", backgroundColor: "#0151b2" },
     { text: "Proyectos", key: "proyectos", backgroundColor: "#ff3d00" },
-    { text: "Contacto", key: "contact", path: "/contact", backgroundColor: "#385239" },
+    { text: "Contacto", key: "contact", backgroundColor: "#385239" },
   ]);
 
   const [selectedButton, setSelectedButton] = useState("home");
-  const [animationsPlayed, setAnimationsPlayed] = useState(false); // Nuevo estado
 
   const [toast, setToast] = useState(null);
   const [isHome, setIsHome] = useState(true);
 
   const handleButtonClick = (button) => {
     setSelectedButton(button);
-    setAnimationsPlayed(true); // Marca las animaciones como reproducidas
   };
 
   let backgroundColor = buttons.find((b) => b.key === selectedButton)?.backgroundColor || "#1b1b1b";
@@ -73,14 +71,11 @@ function App() {
           <ToastContainer />
         </main>
         <nav className="navButtons">
-          {buttons.map((button, index) => (
+          {buttons.map((button) => (
             <ButtonNav
-              key={button.key}
               text={button.text}
               color={button.backgroundColor}
               onClick={() => handleButtonClick(button.key)}
-              index={index}
-              animationsPlayed={animationsPlayed} 
             />
           ))}
         </nav>

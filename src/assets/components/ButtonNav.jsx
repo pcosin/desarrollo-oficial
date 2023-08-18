@@ -3,9 +3,9 @@ import "./buttonNav.css";
 import { BiDownArrowCircle } from "react-icons/bi";
 import Fade from "react-awesome-reveal";
 
-function ButtonNav({ text, color, onClick, index }) {
+function ButtonNav({ text, color, onClick}) {
   return (
-    <Fade className="fade" key={index} direction="left" delay={index * 200}>
+    <Fade className="fade" direction="left" delay={200}>
       <button
         style={{ backgroundColor: color, textAlign: "left",}}
         className={color === "" ? "navButton" : "navButton selected"}
