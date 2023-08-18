@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import mainContentHome from "./mainContenHome";
 import { FiArrowRight } from "react-icons/fi";
-
+import logo from "../../../../public/img/logo-2.png";
 import "./home.css";
 
 function Home({isHome, setIsHome}) {
@@ -10,7 +10,6 @@ function Home({isHome, setIsHome}) {
   const [key, setKey] = useState(Date.now());
   // const [isHome, setIsHome] = useState(true);
 
-console.log(isHome);
 
   useEffect(() => {
     if (isHome) {
@@ -61,10 +60,20 @@ console.log(isHome);
       <div className="main-home">
         {mainContent === defaultMainContent ? (
           <>
-            <h1 className="title title-home slide-in-left">{mainContent}</h1>
+          <section className="home-principal">
+          <div>
+           <h1 className="title title-home slide-in-left">{mainContent}</h1>
             <h3 className="sub-title-home">
               Impulsamos tu negocio al próximo nivel
-            </h3>
+            </h3></div>
+            <div>
+            <img
+            className="logo-home"
+            src={logo}
+            alt="Logo"
+          />
+            </div>
+          </section>
           </>
         ) : (
           mainContentHome[mainContent].map((parrafo, index) => (

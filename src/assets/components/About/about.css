@@ -60,6 +60,7 @@
 
 .about-container-text{
   width: 50%;
+  line-height: 1.7;
   display: flex;
   flex-direction: column;
   gap: 25px;

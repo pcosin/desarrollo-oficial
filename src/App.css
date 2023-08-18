@@ -10,9 +10,9 @@
   min-height: 100vh;
 }
 
-main {
+/* .home-principal {
   flex-grow: 1;
-}
+} */
 
 .mainContent {
   width: min(100% - 2rem, 1440px);
@@ -24,7 +24,7 @@ main {
 }
 
 .title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding-block: 1rem;
 }
 

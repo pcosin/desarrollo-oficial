@@ -34,9 +34,7 @@ function Contact({setToast}) {
         <div className="containerSocialMedia">
         {
           socialMedia.map((icon, i) => (
-              
               <IconSocialMedia icon={icon} key={i}/>
-
           ))
         }
         </div>

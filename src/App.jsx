@@ -13,7 +13,6 @@ import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 
 function App() {
-
   const notify = () =>  toast.success('Mail enviado correctamente', {
     position: "top-center",
     autoClose: 3000,
@@ -23,7 +22,7 @@ function App() {
     draggable: true,
     progress: undefined,
     theme: "light",
-    });;
+  });
 
   const [buttons, setButtons] = useState([
     { text: "Soluciones", key: "home", path: "/", backgroundColor: "#1b1b1b" },
@@ -33,19 +32,14 @@ function App() {
   ]);
 
   const [selectedButton, setSelectedButton] = useState("home");
+  const [animationsPlayed, setAnimationsPlayed] = useState(false); // Nuevo estado
 
   const [toast, setToast] = useState(null);
-
-  const [isHome, setIsHome] = useState(true)
+  const [isHome, setIsHome] = useState(true);
 
   const handleButtonClick = (button) => {
     setSelectedButton(button);
-    const index = buttons.findIndex((b) => b.key === button);
-    const buttonCopy = buttons[index];
-    const newButtons = [...buttons];
-    newButtons.splice(index, 1);
-    newButtons.splice(0, 0, buttonCopy);
-    setButtons(newButtons);
+    setAnimationsPlayed(true); // Marca las animaciones como reproducidas
   };
 
   let backgroundColor = buttons.find((b) => b.key === selectedButton)?.backgroundColor || "#1b1b1b";
@@ -63,7 +57,7 @@ function App() {
 
   const handleLogoClick = () => {
     setSelectedButton("home");
-    setIsHome(true)
+    setIsHome(true);
   };
 
   return (
@@ -71,20 +65,22 @@ function App() {
       <div className="container">
         <Header
           style={{ backgroundColor }}
-          handleButtonClick={handleButtonClick} handleLogoClick={handleLogoClick} 
+          handleButtonClick={handleButtonClick}
+          handleLogoClick={handleLogoClick}
         />
         <main style={{ backgroundColor }}>
           <div className="mainContent">{mainContent}</div>
-          {/* <button onClick={notify}>Notify!</button> */}
           <ToastContainer />
         </main>
         <nav className="navButtons">
-          {buttons.map((button) => (
+          {buttons.map((button, index) => (
             <ButtonNav
               key={button.key}
               text={button.text}
               color={button.backgroundColor}
               onClick={() => handleButtonClick(button.key)}
+              index={index}
+              animationsPlayed={animationsPlayed} 
             />
           ))}
         </nav>
